@@ -1,12 +1,15 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double n;
-        System.out.printf("Введите вещественное число" + "\n");
-        n = scanner.nextDouble();
-        System.out.printf("Число после округления до ближайшего целого "+"%.0f",n);
+        int rez1,rez2,q,w;
+        System.out.printf("Введите 2 натуральных числа" + "\n");
+        q = scanner.nextInt();
+        w = scanner.nextInt();
 
-
+        rez1 =  q / w;
+        rez2 = q % w;
+        System.out.println("Результат деления " + rez1 + " " + "остаток " + rez2);
     }
 }
